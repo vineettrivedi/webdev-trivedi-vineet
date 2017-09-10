@@ -10,6 +10,7 @@ module.exports = function(app)
 
 
 //  var connectionString = 'mongodb://webappmaker:webappmaker@ds163181.mlab.com:63181/webappmaker';
+
   var connectionString = 'mongodb://127.0.0.1:27017/test'; // for local
 
   if(process.env.MLAB_USERNAME_WEBDEV) { // check if running remotely
