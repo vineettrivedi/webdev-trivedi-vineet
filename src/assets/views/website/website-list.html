@@ -8,78 +8,82 @@
 
 
   <meta charset="UTF-8">
-  <title>User Profile</title>
+  <title>Website List</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
 
   <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
+
   <link href="../../../styles.css" rel="stylesheet"/>
   <!-- <link href="../css/style.css" rel="stylesheet"/> -->
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
 
-    <!--heading on the nav bar-->
-    <p class="navbar-header pull-left">
-      <a class="navbar-brand thick">
-        <b>Profile</b>
+    <!--back button-->
+    <p class="navbar-text pull-left">
+      <a href="../user/profile.html" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
     </p>
 
-    <!--tick mark-->
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Websites</b>
+      </a>
+    </p>
+
+    <!--plus sign-->
     <p class="navbar-text pull-right">
-      <a href="profile.html" class="navbar-link">
-        <span class="glyphicon glyphicon-ok"></span>
+      <a href="website-new.html" class="navbar-link">
+        <span class="glyphicon glyphicon-plus"></span>
       </a>
     </p>
 
   </div>
 </nav>
 
+<div class="container-fluid">
+  <ul class="list-group">
 
-<div class="container">
-  <form>
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" class="form-control" id="username" placeholder="walice">
-    </div>
-  </form>
+    <li class="list-group-item">
+      <a href="#">
+        <b>First Item</b>
+      </a>
+      <a href="website-edit.html">
+        <span class="glyphicon glyphicon-cog pull-right"></span>
+      </a>
+    </li>
 
-  <form>
-    <div class="form-group">
-      <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email" placeholder="alice.wonderland@unicorn.com">
-    </div>
-  </form>
+    <li class="list-group-item">
+      <a href="#">
+        <b>Second Item</b>
+      </a>
+      <a href="website-edit.html">
+        <span class="glyphicon glyphicon-cog pull-right"></span>
+      </a>
+    </li>
 
-  <form>
-    <div class="form-group">
-      <label for="first-name">First Name</label>
-      <input type="text" class="form-control" id="first-name" placeholder="Alice">
-    </div>
-  </form>
+    <li class="list-group-item">
+      <a href="#">
+        <b>Third Item</b>
+      </a>
+      <a href="website-edit.html">
+        <span class="glyphicon glyphicon-cog pull-right"></span>
+      </a>
+    </li>
 
-  <form>
-    <div class="form-group">
-      <label for="last-name">Last Name</label>
-      <input type="text" class="form-control" id="last-name" placeholder="Wonderland">
-    </div>
-  </form>
-  <a class="btn btn-primary btn-block"
-     href="../website/website-list.html">Websites</a>
-  <a class="btn btn-danger btn-block "
-     href="login.html" >Logout</a>
-
+  </ul>
 </div>
 
 <!-- Footer -->
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container-fluid">
     <p class="navbar-text pull-right">
-      <a href="profile.html">
+      <a href="../user/profile.html" class="navbar-link">
         <span class="glyphicon glyphicon-user"></span>
       </a>
     </p>

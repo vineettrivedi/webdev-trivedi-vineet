@@ -4,7 +4,7 @@
   <!-- Meta tags for making website for mobile-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+  <meta name="viewport" content="initial-scale=1, user-scalable=no">
 
 
   <meta charset="UTF-8">
@@ -13,22 +13,38 @@
 
 
   <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
-
-  <link href="../css/style.css" rel="stylesheet"/>
+  <link href="../../../styles.css" rel="stylesheet"/>
+  <!-- <link href="../css/style.css" rel="stylesheet"/> -->
 </head>
 
 <body>
 <div class="container">
   <h1>Register</h1>
-  <input placeholder="username"
-         type="text"
-         class="form-control"/>
-  <input placeholder="password"
-         type="password"
-         class="form-control"/>
-  <input placeholder="verify password"
-         type="password"
-         class="form-control"/>
+
+  <form>
+    <div class="form-group">
+      <input placeholder="username"
+             type="text"
+             class="form-control"/>
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <input placeholder="password"
+             type="password"
+             class="form-control"/>
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <input placeholder="verify password"
+             type="password"
+             class="form-control"/>
+    </div>
+  </form>
+
   <a class="btn btn-primary btn-block"
      href="profile.html">Register</a>
   <a class="btn btn-danger btn-block"
