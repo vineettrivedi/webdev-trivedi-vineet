@@ -8,11 +8,12 @@
 
 
   <meta charset="UTF-8">
-  <title>Website Edit</title>
+  <title>Widget Choose</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
 
   <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
+
   <link href="../../../styles.css" rel="stylesheet"/>
   <!-- <link href="../css/style.css" rel="stylesheet"/> -->
 </head>
@@ -26,7 +27,7 @@
 
       <!--back button-->
       <p class="navbar-text pull-left">
-        <a href="../user/profile.html" class="navbar-link">
+        <a href="../page/page-list.html" class="navbar-link">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
       </p>
@@ -34,38 +35,32 @@
       <!--heading on the nav bar-->
       <p class="navbar-header pull-left">
         <a class="navbar-brand thick">
-          <b>Websites</b>
+          <b>Widgets</b>
         </a>
       </p>
 
       <!--plus sign-->
       <p class="navbar-text pull-right">
-        <a href="website-new.html" class="navbar-link">
+        <a href="widget-choose.html" class="navbar-link">
           <span class="glyphicon glyphicon-plus"></span>
         </a>
       </p>
+
 
     </div>
 
     <div class="col-sm-8">
 
-        <!--heading on the nav bar-->
-        <p class="navbar-header pull-left">
-          <a class="navbar-brand thick">
-            <b>Edit Website</b>
-          </a>
-        </p>
+      <!--heading on the nav bar-->
+      <p class="navbar-header pull-left">
+        <a class="navbar-brand thick">
+          <b>Choose Widget</b>
+        </a>
+      </p>
 
-        <!--ok sign-->
-        <p class="navbar-text pull-right">
-          <a href="website-list.html" class="navbar-link">
-            <span class="glyphicon glyphicon-ok"></span>
-          </a>
-       </p>
-
-      <!--remove sign-->
+      <!--cancel sign-->
       <p class="navbar-text pull-right">
-        <a href="website-list.html" class="navbar-link">
+        <a href="widget-list.html" class="navbar-link">
           <span class="glyphicon glyphicon-remove"></span>
         </a>
       </p>
@@ -82,28 +77,28 @@
     <ul class="list-group">
 
       <li class="list-group-item">
-        <a href="../page/page-list.html">
-          <b>First Website</b>
+        <a href="#">
+          <b>First Page</b>
         </a>
-        <a href="website-edit.html">
+        <a href="page-edit.html">
           <span class="glyphicon glyphicon-cog pull-right"></span>
         </a>
       </li>
 
       <li class="list-group-item">
-        <a href="../page/page-list.html">
-          <b>Second Website</b>
+        <a href="#">
+          <b>Second Page</b>
         </a>
-        <a href="website-edit.html">
+        <a href="page-edit.html">
           <span class="glyphicon glyphicon-cog pull-right"></span>
         </a>
       </li>
 
       <li class="list-group-item">
-        <a href="../page/page-list.html">
-          <b>Third Website</b>
+        <a href="#">
+          <b>Third Page</b>
         </a>
-        <a href="website-edit.html">
+        <a href="page-edit.html">
           <span class="glyphicon glyphicon-cog pull-right"></span>
         </a>
       </li>
@@ -113,23 +108,27 @@
 
   <div class="col-sm-8">
 
-    <form>
-      <div class="form-group">
-        <label for="website-name">Website Name</label>
-        <input type="text" class="form-control" id="website-name" value="Alice">
-      </div>
-    </form>
+    <ul class="list-group">
 
-    <form>
-      <div class="form-group">
-        <label for="description">Website Description</label>
-        <textarea class="form-control" id="description" rows="5"
-        value="abc"></textarea>
-      </div>
-    </form>
+      <li class="list-group-item">
+        <a href="widget-heading.html">
+          <b>Header</b>
+        </a>
+      </li>
 
-    <a class="btn btn-danger btn-block"
-       href="website-list.html">Delete</a>
+      <li class="list-group-item">
+        <a href="widget-image.html">
+          <b>Image</b>
+        </a>
+      </li>
+
+      <li class="list-group-item">
+        <a href="widget-youtube.html">
+          <b>YouTube</b>
+        </a>
+      </li>
+
+    </ul>
 
   </div>
 

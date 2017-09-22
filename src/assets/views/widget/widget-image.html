@@ -8,11 +8,12 @@
 
 
   <meta charset="UTF-8">
-  <title>Page Edit</title>
+  <title>Widget Image</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
 
 
   <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
+
   <link href="../../../styles.css" rel="stylesheet"/>
   <!-- <link href="../css/style.css" rel="stylesheet"/> -->
 </head>
@@ -26,7 +27,7 @@
 
       <!--back button-->
       <p class="navbar-text pull-left">
-        <a href="../website/website-list.html" class="navbar-link">
+        <a href="../page/page-list.html" class="navbar-link">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
       </p>
@@ -34,16 +35,17 @@
       <!--heading on the nav bar-->
       <p class="navbar-header pull-left">
         <a class="navbar-brand thick">
-          <b>Pages</b>
+          <b>Widgets</b>
         </a>
       </p>
 
       <!--plus sign-->
       <p class="navbar-text pull-right">
-        <a href="page-new.html" class="navbar-link">
+        <a href="widget-choose.html" class="navbar-link">
           <span class="glyphicon glyphicon-plus"></span>
         </a>
       </p>
+
 
     </div>
 
@@ -52,20 +54,20 @@
       <!--heading on the nav bar-->
       <p class="navbar-header pull-left">
         <a class="navbar-brand thick">
-          <b>Edit Page</b>
+          <b>Widget Edit</b>
         </a>
       </p>
 
       <!--ok sign-->
       <p class="navbar-text pull-right">
-        <a href="page-list.html" class="navbar-link">
+        <a href="widget-list.html" class="navbar-link">
           <span class="glyphicon glyphicon-ok"></span>
         </a>
       </p>
 
       <!--remove sign-->
       <p class="navbar-text pull-right">
-        <a href="page-list.html" class="navbar-link">
+        <a href="widget-list.html" class="navbar-link">
           <span class="glyphicon glyphicon-remove"></span>
         </a>
       </p>
@@ -79,56 +81,83 @@
 <div class="row">
 
   <div class="col-sm-4 hidden-xs">
-    <ul class="list-group">
 
-      <li class="list-group-item">
-        <a href="../widget/widget-list.html">
-          <b>First Page</b>
+    <div class="widget-element">
+      <div class="widget-configuration">
+        <a href="widget-heading.html">
+          <span class="glyphicon glyphicon-cog"></span>
         </a>
-        <a href="page-edit.html">
-          <span class="glyphicon glyphicon-cog pull-right"></span>
-        </a>
-      </li>
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <h1>Guardians Of The Galaxy</h1>
+    </div>
 
-      <li class="list-group-item">
-        <a href="../widget/widget-list.html">
-          <b>Second Page</b>
+    <div class="widget-element">
+      <div class="widget-configuration">
+        <a href="widget-image.html">
+          <span class="glyphicon glyphicon-cog"></span>
         </a>
-        <a href="page-edit.html">
-          <span class="glyphicon glyphicon-cog pull-right"></span>
-        </a>
-      </li>
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <img width="100%" src="wallpaper.jpg">
+    </div>
 
-      <li class="list-group-item">
-        <a href="../widget/widget-list.html">
-          <b>Third Page</b>
+    <div class="widget-element">
+      <div class="widget-configuration">
+        <a href="widget-youtube.html">
+          <span class="glyphicon glyphicon-cog"></span>
         </a>
-        <a href="page-edit.html">
-          <span class="glyphicon glyphicon-cog pull-right"></span>
-        </a>
-      </li>
+        <span class="glyphicon glyphicon-align-justify"></span>
+      </div>
+      <div class="yt-container">
+        <iframe src="https://www.youtube.com/embed/d96cjJhvlMA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
 
-    </ul>
   </div>
 
   <div class="col-sm-8">
 
     <form>
       <div class="form-group">
-        <label for="page-name">Page Name</label>
-        <input type="text" class="form-control" id="page-name" value="Alice">
+        <label for="widget-name">Name</label>
+        <input type="text" class="form-control" id="widget-name" value="Alice">
       </div>
     </form>
 
     <form>
       <div class="form-group">
-        <label for="page-title">Page Title</label>
-        <input type="text" class="form-control" id="page-title" value="Alice">
+        <label for="widget-text">Text</label>
+        <input type="text" class="form-control" id="widget-text" value="Alice">
       </div>
     </form>
 
+    <form>
+      <div class="form-group">
+        <label for="widget-url">URL</label>
+        <input type="text" class="form-control" id="widget-url" value="Alice">
+      </div>
+    </form>
+
+    <form>
+      <div class="form-group">
+        <label for="widget-width">Width</label>
+        <input type="text" class="form-control" id="widget-width" value="Alice">
+      </div>
+    </form>
+
+    <form>
+      <div class="form-group">
+        <label for="widget-upload">Upload</label>
+        <input type="file" class="form-control" id="widget-upload">
+      </div>
+    </form>
+
+    <a class="btn btn-primary btn-block"
+       href="#">Upload Image</a>
+
     <a class="btn btn-danger btn-block"
-       href="page-list.html">Delete</a>
+       href="widget-list.html">Delete</a>
 
   </div>
 
