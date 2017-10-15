@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--back button-->
+    <p class="navbar-text pull-left">
+      <a (click)="websiteList()" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    </p>
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Pages</b>
+      </a>
+    </p>
+
+    <!--plus sign-->
+    <p class="navbar-text pull-right">
+      <a (click)="pageNew()" class="navbar-link">
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <ul class="list-group">
+
+    <li *ngFor="let page of pages" class="list-group-item">
+      <a (click)="widgetList(page)">
+        <b>{{page.name}}</b>
+      </a>
+      <a (click)="pageEdit(page)">
+        <span class="glyphicon glyphicon-cog pull-right"></span>
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>

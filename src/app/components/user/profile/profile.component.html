@@ -1,0 +1,62 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick">
+        <b>Profile</b>
+      </a>
+    </p>
+
+    <!--tick mark-->
+    <p class="navbar-text pull-right">
+      <a (click)="editProfile()"  class="navbar-link">
+        <span class="glyphicon glyphicon-ok"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+
+<div class="container">
+  <form>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input [(ngModel)]="username" name="username" type="text" class="form-control" id="username" >
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" >
+    </div>
+
+    <div class="form-group">
+      <label for="first-name">First Name</label>
+      <input [(ngModel)]="firstName" name="firstName" type="text" class="form-control" id="first-name" >
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last Name</label>
+      <input [(ngModel)]="lastName" name="lastName" type="text" class="form-control" id="last-name" >
+    </div>
+
+    <button class="btn btn-primary btn-block"
+       (click)="website()" >Websites</button>
+    <button class="btn btn-danger btn-block"
+       (click)="logout()" >Logout</button>
+
+  </form>
+</div>
+
+<!-- Footer -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a (click)="profile()" class="navbar-link">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+  </div>
+</nav>
