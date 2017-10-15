@@ -15,6 +15,8 @@ export class WidgetImageComponent implements OnInit {
   websiteId: string;
   pageId: string;
   widgetId: string;
+  width: string;
+  url: string;
   widgets = [];
   widget: any;
 
@@ -30,6 +32,8 @@ export class WidgetImageComponent implements OnInit {
       );
     this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
     this.widget = this._widgetService.findWidgetById(this.widgetId);
+    this.width = this.widget.width;
+    this.url = this.widget.url;
   }
 
   profile() {

@@ -1529,6 +1529,8 @@ var WidgetHeaderComponent = (function () {
         });
         this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
         this.widget = this._widgetService.findWidgetById(this.widgetId);
+        this.size = this.widget.size;
+        this.text = this.widget.text;
     };
     WidgetHeaderComponent.prototype.profile = function () {
         this.router.navigate(['user/', this.userId]);
@@ -1634,6 +1636,8 @@ var WidgetImageComponent = (function () {
         });
         this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
         this.widget = this._widgetService.findWidgetById(this.widgetId);
+        this.width = this.widget.width;
+        this.url = this.widget.url;
     };
     WidgetImageComponent.prototype.profile = function () {
         this.router.navigate(['user/', this.userId]);
@@ -1745,6 +1749,8 @@ var WidgetYoutubeComponent = (function () {
         });
         this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
         this.widget = this._widgetService.findWidgetById(this.widgetId);
+        this.width = this.widget.width;
+        this.url = this.widget.url;
     };
     WidgetYoutubeComponent.prototype.profile = function () {
         this.router.navigate(['user/', this.userId]);

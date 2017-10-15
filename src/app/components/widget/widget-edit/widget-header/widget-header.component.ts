@@ -15,6 +15,8 @@ export class WidgetHeaderComponent implements OnInit {
   websiteId: string;
   pageId: string;
   widgetId: string;
+  size: string;
+  text: string;
   widgets = [];
   widget: any;
 
@@ -30,6 +32,8 @@ export class WidgetHeaderComponent implements OnInit {
       );
     this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
     this.widget = this._widgetService.findWidgetById(this.widgetId);
+    this.size = this.widget.size;
+    this.text = this.widget.text;
   }
 
   profile() {
