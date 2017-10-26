@@ -34,14 +34,19 @@ export class PageNewComponent implements OnInit {
         }
       );
 
-    this.pages = this._pageService.findPagesByWebsiteId(this.userId);
+    this._pageService.findPagesByWebsiteId(this.userId)
+      .subscribe((pages: any) => {
+      this.pages = pages;
+      });
   }
 
   createNewPage() {
     this.name = this.newPageForm.value.name;
     this.title = this.newPageForm.value.name;
-    const page: any = this._pageService.createPage( this.userId, {'name': this.name, 'title': this.title} );
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', page._id]);
+    this._pageService.createPage( this.userId, {'name': this.name, 'title': this.title} )
+      .subscribe((page: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', page._id]);
+    });
   }
 
   pageList() {

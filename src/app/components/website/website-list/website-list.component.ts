@@ -23,7 +23,10 @@ export class WebsiteListComponent implements OnInit {
         }
       );
 
-    this.websites = this._websiteService.findWebsitesByUser(this.userId);
+    this._websiteService.findWebsitesByUser(this.userId)
+      .subscribe((websites: any) => {
+      this.websites = websites;
+      });
   }
 
   profile() {

@@ -25,7 +25,11 @@ export class WidgetChooserComponent implements OnInit {
           this.pageId = params['pid'];
         }
       );
-    this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
+
+    this._widgetService.findWidgetsByPageId(this.pageId)
+      .subscribe((widgets: any) => {
+      this.widgets = widgets;
+      });
 
   }
 
@@ -46,9 +50,11 @@ export class WidgetChooserComponent implements OnInit {
   }
 
   widgetNewHeader() {
-    const widget: any = this._widgetService.createWidget(this.pageId, {});
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
-      widget._id, 'header']);
+    this._widgetService.createWidget(this.pageId, {})
+      .subscribe((widget: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+          widget._id, 'header']);
+      });
   }
 
   widgetEdit(widget: any) {
@@ -57,15 +63,19 @@ export class WidgetChooserComponent implements OnInit {
   }
 
   widgetNewYouTube() {
-    const widget: any = this._widgetService.createWidget(this.pageId, {});
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
-      widget._id, 'youtube']);
+    this._widgetService.createWidget(this.pageId, {})
+      .subscribe((widget: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+          widget._id, 'youtube']);
+      });
   }
 
   widgetNewImage() {
-    const widget: any = this._widgetService.createWidget(this.pageId, {});
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
-      widget._id, 'image']);
+    this._widgetService.createWidget(this.pageId, {})
+      .subscribe((widget: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+          widget._id, 'image']);
+      });
   }
 
 }

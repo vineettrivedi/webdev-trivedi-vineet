@@ -28,12 +28,24 @@ export class LoginComponent implements OnInit {
     // fetching data from loginForm
     this.username = this.loginForm.value.username;
     this.password = this.loginForm.value.password;
-    const user: any = this.userService.findUserByCredentials(this.username, this.password);
-    if (user) {
-      this.router.navigate(['user/', user._id]);
-    } else {
-      this.errorFlag = true;
-    }
+    this.userService.findUserByCredentials(this.username, this.password)
+      .subscribe(
+        (user: any) => {
+          this.errorFlag = false;
+          this.router.navigate(['user/', user._id]);
+        },
+        (error: any) => {
+          this.errorFlag = true;
+        }
+      );
+
+    // const user: any = this.userService.findUserByCredentials(this.username, this.password);
+    // if (user) {
+    //   this.router.navigate(['user/', user._id]);
+    // } else {
+    //   this.errorFlag = true;
+    // }
+
   }
 
   register() {

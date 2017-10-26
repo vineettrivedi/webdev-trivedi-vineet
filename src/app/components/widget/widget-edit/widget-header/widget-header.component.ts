@@ -30,10 +30,19 @@ export class WidgetHeaderComponent implements OnInit {
           this.widgetId = params['wgid'];
         }
       );
-    this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
-    this.widget = this._widgetService.findWidgetById(this.widgetId);
-    this.size = this.widget.size;
-    this.text = this.widget.text;
+
+    this._widgetService.findWidgetsByPageId(this.pageId)
+      .subscribe((widgets: any) => {
+        this.widgets = widgets;
+      });
+
+    this._widgetService.findWidgetById(this.widgetId)
+      .subscribe((widget: any) => {
+        this.widget = widget;
+        this.size = this.widget.size;
+        this.text = this.widget.text;
+      });
+
   }
 
   profile() {
@@ -58,14 +67,18 @@ export class WidgetHeaderComponent implements OnInit {
   }
 
   deleteWidget() {
-    this._widgetService.deleteWidget(this.widgetId);
-    this.widgetList();
+    this._widgetService.deleteWidget(this.widgetId).subscribe(() => {
+      this.widgetList();
+    });
   }
 
   editWidget() {
     this._widgetService.updateWidget(this.widgetId, {'_id': this.widget.id, 'widgetType': this.widget.widgetType,
-      'pageId': this.widget.pageId, 'size': this.widget.size, 'text': this.widget.text});
-    this.widgetList();
+      'pageId': this.widget.pageId, 'size': this.widget.size, 'text': this.widget.text})
+      .subscribe((widget: any) => {
+      this.widget = widget;
+      this.widgetList();
+      });
   }
 
 }

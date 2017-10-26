@@ -30,10 +30,18 @@ export class PageEditComponent implements OnInit {
         }
       );
 
-    this.pages = this._pageService.findPagesByWebsiteId(this.userId);
-    this.page = this._pageService.findPageById(this.pageId);
-    this.name = this.page['name'];
-    this.title = this.page['description'];
+    this._pageService.findPagesByWebsiteId(this.userId)
+      .subscribe((pages: any) => {
+      this.pages = pages;
+      });
+
+    this._pageService.findPageById(this.pageId)
+      .subscribe((page: any) => {
+      this.page = page;
+      this.name = this.page['name'];
+      this.title = this.page['description'];
+      });
+
   }
 
   pageList() {
@@ -62,12 +70,17 @@ export class PageEditComponent implements OnInit {
 
   edit() {
     this._pageService.updatePage(this.pageId, {'_id': this.pageId, 'name': this.name,
-      'websiteId': this.websiteId, 'description': this.title});
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId]);
+      'websiteId': this.websiteId, 'description': this.title})
+      .subscribe((page: any) => {
+      this.page = page;
+      this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId]);
+      });
   }
 
   deletePage() {
-    this._pageService.deletePage(this.pageId);
-    this.pageList();
+    this._pageService.deletePage(this.pageId).subscribe(() => {
+      this.pageList();
+      }
+    );
   }
 }

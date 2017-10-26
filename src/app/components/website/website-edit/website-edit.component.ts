@@ -28,11 +28,22 @@ export class WebsiteEditComponent implements OnInit {
           this.websiteId = params['wid'];
         }
       );
-    this.websites = this._websiteService.findWebsitesByUser(this.userId);
-    this.website = this._websiteService.findWebsiteById(this.websiteId);
-    this.name = this.website['name'];
-    this.developerId = this.website['developerId'];
-    this.description = this.website['description'];
+    this._websiteService.findWebsiteById(this.websiteId)
+      .subscribe((website: any) => {
+        this.website = website;
+        this.name = this.website['name'];
+        this.developerId = this.website['developerId'];
+        this.description = this.website['description'];
+      });
+    this._websiteService.findWebsitesByUser(this.userId)
+      .subscribe((website: any) => {
+        this.websites = website;
+      });
+
+
+    // this.websites = this._websiteService.findWebsitesByUser(this.userId);
+    // this.website = this._websiteService.findWebsiteById(this.websiteId);
+
   }
 
   profile() {
@@ -57,12 +68,17 @@ export class WebsiteEditComponent implements OnInit {
 
   edit() {
     this._websiteService.updateWebsite(this.websiteId, {'_id': this.websiteId, 'name': this.name,
-      'developerId': this.developerId, 'description': this.description});
-    this.router.navigate(['user/', this.userId, 'website', this.websiteId]);
+      'developerId': this.developerId, 'description': this.description})
+      .subscribe((website: any) => {
+      this.website = website;
+      this.router.navigate(['user/', this.userId, 'website', this.websiteId]);
+      });
   }
 
   deleteWebsite() {
-    this._websiteService.deleteWebsite(this.websiteId);
-    this.router.navigate(['user/', this.userId, 'website']);
+    this._websiteService.deleteWebsite(this.websiteId).subscribe(() => {
+        this.router.navigate(['user/', this.userId, 'website']);
+      }
+    );
   }
 }

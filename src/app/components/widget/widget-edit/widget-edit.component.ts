@@ -29,8 +29,16 @@ export class WidgetEditComponent implements OnInit {
           this.widgetId = params['wgid'];
         }
       );
-    this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
-    this.widget = this._widgetService.findWidgetById(this.widgetId);
+
+    this._widgetService.findWidgetsByPageId(this.pageId)
+      .subscribe((widgets: any) => {
+      this.widgets = widgets;
+      });
+
+    this._widgetService.findWidgetById(this.widgetId)
+      .subscribe((widget: any) => {
+      this.widget = widget;
+      });
   }
 
 }

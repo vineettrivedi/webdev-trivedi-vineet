@@ -32,8 +32,17 @@ export class WidgetYoutubeComponent implements OnInit {
           this.widgetId = params['wgid'];
         }
       );
-    this.widgets = this._widgetService.findWidgetsByPageId(this.pageId);
-    this.widget = this._widgetService.findWidgetById(this.widgetId);
+
+    this._widgetService.findWidgetsByPageId(this.pageId)
+      .subscribe((widgets: any) => {
+        this.widgets = widgets;
+      });
+
+    this._widgetService.findWidgetById(this.widgetId)
+      .subscribe((widget: any) => {
+        this.widget = widget;
+      });
+
     this.width = this.widget.width;
     this.url = this.widget.url;
   }
@@ -61,8 +70,9 @@ export class WidgetYoutubeComponent implements OnInit {
   }
 
   deleteWidget() {
-    this._widgetService.deleteWidget(this.widgetId);
-    this.widgetList();
+    this._widgetService.deleteWidget(this.widgetId).subscribe(() => {
+      this.widgetList();
+    });
   }
 
   editWidget() {
@@ -70,8 +80,11 @@ export class WidgetYoutubeComponent implements OnInit {
       'widgetType': this.widget.widgetType,
       'pageId': this.widget.pageId,
       'width': this.widget.width,
-      'url': this.widget.url});
-    this.widgetList();
+      'url': this.widget.url})
+      .subscribe((widget: any) => {
+        this.widget = widget;
+        this.widgetList();
+      });
   }
 
 }
