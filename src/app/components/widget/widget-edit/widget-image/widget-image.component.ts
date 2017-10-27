@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {WidgetService} from '../../../../services/widget.service.client';
 import {ActivatedRoute, Router} from '@angular/router';
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'app-widget-image',
@@ -11,6 +12,7 @@ export class WidgetImageComponent implements OnInit {
 
   constructor(private _widgetService: WidgetService, private activatedRoute: ActivatedRoute, private router: Router) { }
 
+  baseUrl = environment.baseUrl;
   userId: string;
   websiteId: string;
   pageId: string;
@@ -39,10 +41,10 @@ export class WidgetImageComponent implements OnInit {
     this._widgetService.findWidgetById(this.widgetId)
       .subscribe((widget: any) => {
         this.widget = widget;
+        this.width = this.widget.width;
+        this.url = this.widget.url;
       });
 
-    this.width = this.widget.width;
-    this.url = this.widget.url;
   }
 
   profile() {

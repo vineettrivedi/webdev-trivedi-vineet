@@ -22,6 +22,12 @@ module.exports = function (app) {
   app.put("/api/widget/:wgid", updateWidget);
   app.delete("/api/widget/:wgid", deleteWidget);
 
+  const multer = require('multer'); // npm install multer --save
+  const upload = multer({ dest: __dirname+'/../../public/uploads' });
+
+  app.post ("/api/upload", upload.single('myFile'), uploadImage);
+
+
   function createWidget(req, res) {
     const pageId = req.params['pid'];
     const widget = req.body;
@@ -88,6 +94,31 @@ module.exports = function (app) {
         res.json(this.widgets[x]);
       }
     }
+  }
+
+  function uploadImage(req, res) {
+
+    const widgetId      = req.body.widgetId;
+    const width         = req.body.width;
+    const myFile        = req.file;
+
+    const userId = req.body.userId;
+    const websiteId = req.body.websiteId;
+    const pageId = req.body.pageId;
+
+    const originalname  = myFile.originalname; // file name on user's computer
+    const filename      = myFile.filename;     // new file name in upload folder
+    const path          = myFile.path;         // full path of uploaded file
+    const destination   = myFile.destination;  // folder where file is saved to
+    const size          = myFile.size;
+    const mimetype      = myFile.mimetype;
+
+    widget = getWidgetById(widgetId);
+    widget.url = '/uploads/'+filename;
+
+    const callbackUrl   = "/assignment/#/user/"+userId+"/website/"+websiteId+"/page/"+pageId+"/widget";
+
+    res.redirect(callbackUrl);
   }
 
 };

@@ -41,10 +41,10 @@ export class WidgetYoutubeComponent implements OnInit {
     this._widgetService.findWidgetById(this.widgetId)
       .subscribe((widget: any) => {
         this.widget = widget;
+        this.width = this.widget.width;
+        this.url = this.widget.url;
       });
 
-    this.width = this.widget.width;
-    this.url = this.widget.url;
   }
 
   profile() {
