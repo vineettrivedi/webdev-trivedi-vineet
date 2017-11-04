@@ -29,6 +29,8 @@ import { WidgetService } from './services/widget.service.client';
 import { SafePipe } from './components/widget/widget-edit/safe-pipe';
 
 import {Routing} from './app.routing';
+import { SearchTestComponent } from './search-test/search-test.component';
+import {SearchService} from './services/search.service.client';
 
 @NgModule({
   // Declare components here
@@ -51,7 +53,8 @@ import {Routing} from './app.routing';
     WidgetHeaderComponent,
     WidgetImageComponent,
     WidgetYoutubeComponent,
-    SafePipe
+    SafePipe,
+    SearchTestComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,7 @@ import {Routing} from './app.routing';
     Routing,
   ],
   // Client Side services here
-  providers: [ TestService, UserService, WebsiteService, PageService, WidgetService],
+  providers: [ TestService, UserService, WebsiteService, PageService, WidgetService, SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

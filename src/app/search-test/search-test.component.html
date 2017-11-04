@@ -1,0 +1,16 @@
+<h1>Search API Test</h1>
+
+<label>Search Image</label>
+<input [(ngModel)]="image"
+       placeholder="enter image"
+       class="form-control" />
+<button (click)="searchImage(image)"
+        class="btn btn-primary btn-block">
+  Search
+</button>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let photo of result.photos.photo">
+    {{photo.id}}
+  </li>
+</ul>

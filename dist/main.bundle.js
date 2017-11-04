@@ -100,12 +100,16 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_widget_service_client__ = __webpack_require__("../../../../../src/app/services/widget.service.client.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_widget_widget_edit_safe_pipe__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/safe-pipe.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_search_service_client__ = __webpack_require__("../../../../../src/app/services/search.service.client.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -162,7 +166,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__components_widget_widget_edit_widget_header_widget_header_component__["a" /* WidgetHeaderComponent */],
             __WEBPACK_IMPORTED_MODULE_21__components_widget_widget_edit_widget_image_widget_image_component__["a" /* WidgetImageComponent */],
             __WEBPACK_IMPORTED_MODULE_22__components_widget_widget_edit_widget_youtube_widget_youtube_component__["a" /* WidgetYoutubeComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__components_widget_widget_edit_safe_pipe__["a" /* SafePipe */]
+            __WEBPACK_IMPORTED_MODULE_27__components_widget_widget_edit_safe_pipe__["a" /* SafePipe */],
+            __WEBPACK_IMPORTED_MODULE_29__search_test_search_test_component__["a" /* SearchTestComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -171,7 +176,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_28__app_routing__["a" /* Routing */],
         ],
         // Client Side services here
-        providers: [__WEBPACK_IMPORTED_MODULE_7__services_test_service_client__["a" /* TestService */], __WEBPACK_IMPORTED_MODULE_23__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_24__services_website_service_client__["a" /* WebsiteService */], __WEBPACK_IMPORTED_MODULE_25__services_page_service_client__["a" /* PageService */], __WEBPACK_IMPORTED_MODULE_26__services_widget_service_client__["a" /* WidgetService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_7__services_test_service_client__["a" /* TestService */], __WEBPACK_IMPORTED_MODULE_23__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_24__services_website_service_client__["a" /* WebsiteService */], __WEBPACK_IMPORTED_MODULE_25__services_page_service_client__["a" /* PageService */], __WEBPACK_IMPORTED_MODULE_26__services_widget_service_client__["a" /* WidgetService */], __WEBPACK_IMPORTED_MODULE_30__services_search_service_client__["a" /* SearchService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -203,9 +208,11 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_widget_widget_edit_widget_header_widget_header_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-header/widget-header.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_widget_widget_edit_widget_image_widget_image_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-image/widget-image.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_widget_widget_edit_widget_youtube_widget_youtube_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
 /**
  * Created by sesha on 7/26/17.
  */
+
 
 
 
@@ -241,7 +248,8 @@ var APP_ROUTES = [
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid', component: __WEBPACK_IMPORTED_MODULE_13__components_widget_widget_edit_widget_edit_component__["a" /* WidgetEditComponent */] },
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/header', component: __WEBPACK_IMPORTED_MODULE_15__components_widget_widget_edit_widget_header_widget_header_component__["a" /* WidgetHeaderComponent */] },
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/image', component: __WEBPACK_IMPORTED_MODULE_16__components_widget_widget_edit_widget_image_widget_image_component__["a" /* WidgetImageComponent */] },
-    { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/youtube', component: __WEBPACK_IMPORTED_MODULE_17__components_widget_widget_edit_widget_youtube_widget_youtube_component__["a" /* WidgetYoutubeComponent */] }
+    { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/youtube', component: __WEBPACK_IMPORTED_MODULE_17__components_widget_widget_edit_widget_youtube_widget_youtube_component__["a" /* WidgetYoutubeComponent */] },
+    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_18__search_test_search_test_component__["a" /* SearchTestComponent */] }
 ];
 // Export the routes as module providers
 var Routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES);
@@ -2066,6 +2074,79 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "../../../../../src/app/search-test/search-test.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/search-test/search-test.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Search API Test</h1>\n\n<label>Search Image</label>\n<input [(ngModel)]=\"image\"\n       placeholder=\"enter image\"\n       class=\"form-control\" />\n<button (click)=\"searchImage(image)\"\n        class=\"btn btn-primary btn-block\">\n  Search\n</button>\n\n<ul class=\"list-group\">\n  <li class=\"list-group-item\" *ngFor=\"let photo of result.photos.photo\">\n    {{photo.id}}\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/search-test/search-test.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchTestComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_search_service_client__ = __webpack_require__("../../../../../src/app/services/search.service.client.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SearchTestComponent = (function () {
+    function SearchTestComponent(searchService) {
+        this.searchService = searchService;
+    }
+    SearchTestComponent.prototype.searchImage = function (image) {
+        var _this = this;
+        this.searchService.searchImage(image)
+            .subscribe(function (result) {
+            console.log(result);
+            _this.result = result;
+        });
+    };
+    SearchTestComponent.prototype.ngOnInit = function () {
+    };
+    return SearchTestComponent;
+}());
+SearchTestComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-search-test',
+        template: __webpack_require__("../../../../../src/app/search-test/search-test.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/search-test/search-test.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_search_service_client__["a" /* SearchService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_search_service_client__["a" /* SearchService */]) === "function" && _a || Object])
+], SearchTestComponent);
+
+var _a;
+//# sourceMappingURL=search-test.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/services/page.service.client.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2141,6 +2222,52 @@ PageService = __decorate([
 
 var _a;
 //# sourceMappingURL=page.service.client.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/services/search.service.client.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__("../../../../rxjs/Rx.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SearchService = (function () {
+    function SearchService(http) {
+        this.http = http;
+    }
+    SearchService.prototype.searchImage = function (image) {
+        var url = 'https://api.flickr.com/' +
+            'services/rest/?method=flickr.photos.search&api_key=580fd707dfe6fa84a049479f797769de&text='
+            + image + '&format=json&nojsoncallback=1';
+        return this.http.get(url)
+            .map(function (response) {
+            return response.json();
+        });
+    };
+    return SearchService;
+}());
+SearchService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object])
+], SearchService);
+
+var _a;
+//# sourceMappingURL=search.service.client.js.map
 
 /***/ }),
 
