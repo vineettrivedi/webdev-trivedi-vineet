@@ -60,4 +60,14 @@ export class WidgetListComponent implements OnInit {
       widget._id, 'image']);
   }
 
+  widgetEditHtml(widget: any) {
+    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+      widget._id, 'html']);
+  }
+
+  widgetEditText(widget: any) {
+    this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+      widget._id, 'text']);
+  }
+
 }

@@ -94,20 +94,26 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_widget_widget_edit_widget_header_widget_header_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-header/widget-header.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_widget_widget_edit_widget_image_widget_image_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-image/widget-image.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_widget_widget_edit_widget_youtube_widget_youtube_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_user_service_client__ = __webpack_require__("../../../../../src/app/services/user.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_website_service_client__ = __webpack_require__("../../../../../src/app/services/website.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_page_service_client__ = __webpack_require__("../../../../../src/app/services/page.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_widget_service_client__ = __webpack_require__("../../../../../src/app/services/widget.service.client.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_widget_widget_edit_safe_pipe__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/safe-pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_search_service_client__ = __webpack_require__("../../../../../src/app/services/search.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_widget_widget_edit_widget_html_widget_html_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_widget_widget_edit_widget_text_widget_text_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_user_service_client__ = __webpack_require__("../../../../../src/app/services/user.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_website_service_client__ = __webpack_require__("../../../../../src/app/services/website.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_page_service_client__ = __webpack_require__("../../../../../src/app/services/page.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__services_widget_service_client__ = __webpack_require__("../../../../../src/app/services/widget.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_widget_widget_edit_safe_pipe__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/safe-pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_ngx_quill_editor__ = __webpack_require__("../../../../ngx-quill-editor/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_search_service_client__ = __webpack_require__("../../../../../src/app/services/search.service.client.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -166,17 +172,20 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_20__components_widget_widget_edit_widget_header_widget_header_component__["a" /* WidgetHeaderComponent */],
             __WEBPACK_IMPORTED_MODULE_21__components_widget_widget_edit_widget_image_widget_image_component__["a" /* WidgetImageComponent */],
             __WEBPACK_IMPORTED_MODULE_22__components_widget_widget_edit_widget_youtube_widget_youtube_component__["a" /* WidgetYoutubeComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__components_widget_widget_edit_safe_pipe__["a" /* SafePipe */],
-            __WEBPACK_IMPORTED_MODULE_29__search_test_search_test_component__["a" /* SearchTestComponent */]
+            __WEBPACK_IMPORTED_MODULE_23__components_widget_widget_edit_widget_html_widget_html_component__["a" /* WidgetHtmlComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__components_widget_widget_edit_widget_text_widget_text_component__["a" /* WidgetTextComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__components_widget_widget_edit_safe_pipe__["a" /* SafePipe */],
+            __WEBPACK_IMPORTED_MODULE_32__search_test_search_test_component__["a" /* SearchTestComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_28__app_routing__["a" /* Routing */],
+            __WEBPACK_IMPORTED_MODULE_31__app_routing__["a" /* Routing */],
+            __WEBPACK_IMPORTED_MODULE_30_ngx_quill_editor__["a" /* QuillEditorModule */]
         ],
         // Client Side services here
-        providers: [__WEBPACK_IMPORTED_MODULE_7__services_test_service_client__["a" /* TestService */], __WEBPACK_IMPORTED_MODULE_23__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_24__services_website_service_client__["a" /* WebsiteService */], __WEBPACK_IMPORTED_MODULE_25__services_page_service_client__["a" /* PageService */], __WEBPACK_IMPORTED_MODULE_26__services_widget_service_client__["a" /* WidgetService */], __WEBPACK_IMPORTED_MODULE_30__services_search_service_client__["a" /* SearchService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_7__services_test_service_client__["a" /* TestService */], __WEBPACK_IMPORTED_MODULE_25__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_26__services_website_service_client__["a" /* WebsiteService */], __WEBPACK_IMPORTED_MODULE_27__services_page_service_client__["a" /* PageService */], __WEBPACK_IMPORTED_MODULE_28__services_widget_service_client__["a" /* WidgetService */], __WEBPACK_IMPORTED_MODULE_33__services_search_service_client__["a" /* SearchService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -208,10 +217,14 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_widget_widget_edit_widget_header_widget_header_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-header/widget-header.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_widget_widget_edit_widget_image_widget_image_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-image/widget-image.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_widget_widget_edit_widget_youtube_widget_youtube_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_widget_widget_edit_widget_html_widget_html_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_widget_widget_edit_widget_text_widget_text_component__ = __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
 /**
  * Created by sesha on 7/26/17.
  */
+
+
 
 
 
@@ -249,7 +262,9 @@ var APP_ROUTES = [
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/header', component: __WEBPACK_IMPORTED_MODULE_15__components_widget_widget_edit_widget_header_widget_header_component__["a" /* WidgetHeaderComponent */] },
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/image', component: __WEBPACK_IMPORTED_MODULE_16__components_widget_widget_edit_widget_image_widget_image_component__["a" /* WidgetImageComponent */] },
     { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/youtube', component: __WEBPACK_IMPORTED_MODULE_17__components_widget_widget_edit_widget_youtube_widget_youtube_component__["a" /* WidgetYoutubeComponent */] },
-    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_18__search_test_search_test_component__["a" /* SearchTestComponent */] }
+    { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/html', component: __WEBPACK_IMPORTED_MODULE_18__components_widget_widget_edit_widget_html_widget_html_component__["a" /* WidgetHtmlComponent */] },
+    { path: 'user/:uid/website/:wid/page/:pid/widget/:wgid/text', component: __WEBPACK_IMPORTED_MODULE_19__components_widget_widget_edit_widget_text_widget_text_component__["a" /* WidgetTextComponent */] },
+    { path: 'search', component: __WEBPACK_IMPORTED_MODULE_20__search_test_search_test_component__["a" /* SearchTestComponent */] }
 ];
 // Export the routes as module providers
 var Routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(APP_ROUTES);
@@ -631,7 +646,7 @@ var PageNewComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* NgForm */]) === "function" && _a || Object)
 ], PageNewComponent.prototype, "newPageForm", void 0);
 PageNewComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -821,7 +836,7 @@ var LoginComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NgForm */]) === "function" && _a || Object)
 ], LoginComponent.prototype, "loginForm", void 0);
 LoginComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -1019,7 +1034,7 @@ var RegisterComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NgForm */]) === "function" && _a || Object)
 ], RegisterComponent.prototype, "loginForm", void 0);
 RegisterComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -1342,7 +1357,7 @@ var WebsiteNewComponent = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])('f'),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* NgForm */]) === "function" && _a || Object)
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* NgForm */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* NgForm */]) === "function" && _a || Object)
 ], WebsiteNewComponent.prototype, "newWebsiteForm", void 0);
 WebsiteNewComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
@@ -1379,7 +1394,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-chooser/widget-chooser.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Choose Widget</b>\n        </a>\n      </p>\n\n      <!--cancel sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <ul class=\"list-group\">\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewHeader()\">\n          <b>Header</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewImage()\">\n          <b>Image</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewYouTube()\">\n          <b>YouTube</b>\n        </a>\n      </li>\n\n    </ul>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Choose Widget</b>\n        </a>\n      </p>\n\n      <!--cancel sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <ul class=\"list-group\">\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewHeader()\">\n          <b>Header</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewImage()\">\n          <b>Image</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewYouTube()\">\n          <b>YouTube</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewHtml()\">\n          <b>Html</b>\n        </a>\n      </li>\n\n      <li class=\"list-group-item\">\n        <a (click)=\"widgetNewText()\">\n          <b>Text</b>\n        </a>\n      </li>\n\n    </ul>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -1463,6 +1478,22 @@ var WidgetChooserComponent = (function () {
                 widget._id, 'image']);
         });
     };
+    WidgetChooserComponent.prototype.widgetNewHtml = function () {
+        var _this = this;
+        this._widgetService.createWidget(this.pageId, {})
+            .subscribe(function (widget) {
+            _this.router.navigate(['user/', _this.userId, 'website', _this.websiteId, 'page', _this.pageId, 'widget',
+                widget._id, 'html']);
+        });
+    };
+    WidgetChooserComponent.prototype.widgetNewText = function () {
+        var _this = this;
+        this._widgetService.createWidget(this.pageId, {})
+            .subscribe(function (widget) {
+            _this.router.navigate(['user/', _this.userId, 'website', _this.websiteId, 'page', _this.pageId, 'widget',
+                widget._id, 'text']);
+        });
+    };
     return WidgetChooserComponent;
 }());
 WidgetChooserComponent = __decorate([
@@ -1537,7 +1568,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"widget.widgetType\">\n\n  <div *ngSwitchCase=\"'HEADING'\">\n    <app-widget-header></app-widget-header>\n  </div>\n\n  <div *ngSwitchCase=\"'IMAGE'\">\n    <app-widget-image></app-widget-image>\n  </div>\n\n  <div *ngSwitchCase=\"'YOUTUBE'\">\n    <app-widget-youtube></app-widget-youtube>\n  </div>\n\n</div>\n"
+module.exports = "<div [ngSwitch]=\"widget.widgetType\">\n\n  <div *ngSwitchCase=\"'HEADING'\">\n    <app-widget-header></app-widget-header>\n  </div>\n\n  <div *ngSwitchCase=\"'IMAGE'\">\n    <app-widget-image></app-widget-image>\n  </div>\n\n  <div *ngSwitchCase=\"'YOUTUBE'\">\n    <app-widget-youtube></app-widget-youtube>\n  </div>\n\n  <div *ngSwitchCase=\"'HTML'\">\n    <app-widget-html></app-widget-html>\n  </div>\n\n  <div *ngSwitchCase=\"'TEXT'\">\n    <app-widget-text></app-widget-text>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -1623,7 +1654,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-header/widget-header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <form>\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-size\">Size</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-size\" name=\"size\">\n      </div>\n    </form>\n\n    <button class=\"btn btn-danger btn-block\" (click)=\"deleteWidget()\">Delete</button>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <form>\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-size\">Size</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-size\" name=\"size\">\n      </div>\n    </form>\n\n    <button class=\"btn btn-danger btn-block\" (click)=\"deleteWidget()\">Delete</button>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -1721,6 +1752,124 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <label for=\"Text\">Text</label>\n    <input [(ngModel)]=\"widget.text\"\n           type=\"text\"\n           id=\"Text\"\n           name=\"text\"\n           class=\"form-control\"/>\n\n    <button class=\"btn btn-danger btn-block\" (click)=\"deleteWidget()\">Delete</button>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WidgetHtmlComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__ = __webpack_require__("../../../../../src/app/services/widget.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var WidgetHtmlComponent = (function () {
+    function WidgetHtmlComponent(_widgetService, activatedRoute, router) {
+        this._widgetService = _widgetService;
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.widgets = [];
+    }
+    WidgetHtmlComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activatedRoute.params
+            .subscribe(function (params) {
+            _this.userId = params['uid'];
+            _this.websiteId = params['wid'];
+            _this.pageId = params['pid'];
+            _this.widgetId = params['wgid'];
+        });
+        this._widgetService.findWidgetsByPageId(this.pageId)
+            .subscribe(function (widgets) {
+            _this.widgets = widgets;
+        });
+        this._widgetService.findWidgetById(this.widgetId)
+            .subscribe(function (widget) {
+            _this.widget = widget;
+            _this.text = _this.widget.text;
+        });
+    };
+    WidgetHtmlComponent.prototype.profile = function () {
+        this.router.navigate(['user/', this.userId]);
+    };
+    WidgetHtmlComponent.prototype.widgetChooser = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget', 'new']);
+    };
+    WidgetHtmlComponent.prototype.widgetList = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget']);
+    };
+    WidgetHtmlComponent.prototype.pageList = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page']);
+    };
+    WidgetHtmlComponent.prototype.widgetEdit = function (widget) {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+            widget._id]);
+    };
+    WidgetHtmlComponent.prototype.deleteWidget = function () {
+        var _this = this;
+        this._widgetService.deleteWidget(this.widgetId).subscribe(function () {
+            _this.widgetList();
+        });
+    };
+    WidgetHtmlComponent.prototype.editWidget = function () {
+        var _this = this;
+        this._widgetService.updateWidget(this.widgetId, { '_id': this.widget.id, 'widgetType': this.widget.widgetType,
+            'pageId': this.widget.pageId, 'text': this.widget.text })
+            .subscribe(function (widget) {
+            _this.widget = widget;
+            _this.widgetList();
+        });
+    };
+    return WidgetHtmlComponent;
+}());
+WidgetHtmlComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-widget-html',
+        template: __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-html/widget-html.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__["a" /* WidgetService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__["a" /* WidgetService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], WidgetHtmlComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=widget-html.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-image/widget-image.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1742,7 +1891,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-image/widget-image.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <form>\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-url\">URL</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-url\" name=\"url\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-width\">Width</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-width\" name=\"width\">\n      </div>\n\n      <form ngForm action=\"{{baseUrl}}/api/upload\" method=\"post\" enctype=\"multipart/form-data\">\n        <input  name=\"myFile\"   type=\"file\" class=\"form-control\"/>\n        <input  name=\"widgetId\" value=\"{{widgetId}}\"   style=\"display: none\"/>\n        <input  name=\"websiteId\" value=\"{{websiteId}}\"   style=\"display: none\"/>\n        <input  name=\"pageId\" value=\"{{pageId}}\"   style=\"display: none\"/>\n        <input  name=\"userId\" value=\"{{userId}}\"   style=\"display: none\"/>\n        <button type=\"submit\" class=\"btn btn-block btn-primary\">Upload Image</button>\n        <br/>\n      </form>\n\n\n      <!--<div class=\"form-group\">-->\n        <!--<label for=\"widget-upload\">Upload</label>-->\n        <!--<input type=\"file\" class=\"form-control\" id=\"widget-upload\" name=\"upload\">-->\n      <!--</div>-->\n\n      <!--<button class=\"btn btn-primary btn-block\"-->\n         <!--href=\"#\">Upload Image</button>-->\n\n      <button class=\"btn btn-danger btn-block\"\n         (click)=\"deleteWidget()\">Delete</button>\n    </form>\n\n  </div>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <form>\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-url\">URL</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-url\" name=\"url\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-width\">Width</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-width\" name=\"width\">\n      </div>\n\n      <form ngForm action=\"{{baseUrl}}/api/upload\" method=\"post\" enctype=\"multipart/form-data\">\n        <input  name=\"myFile\"   type=\"file\" class=\"form-control\"/>\n        <input  name=\"widgetId\" value=\"{{widgetId}}\"   style=\"display: none\"/>\n        <input  name=\"websiteId\" value=\"{{websiteId}}\"   style=\"display: none\"/>\n        <input  name=\"pageId\" value=\"{{pageId}}\"   style=\"display: none\"/>\n        <input  name=\"userId\" value=\"{{userId}}\"   style=\"display: none\"/>\n        <button type=\"submit\" class=\"btn btn-block btn-primary\">Upload Image</button>\n        <br/>\n      </form>\n\n\n      <!--<div class=\"form-group\">-->\n        <!--<label for=\"widget-upload\">Upload</label>-->\n        <!--<input type=\"file\" class=\"form-control\" id=\"widget-upload\" name=\"upload\">-->\n      <!--</div>-->\n\n      <!--<button class=\"btn btn-primary btn-block\"-->\n         <!--href=\"#\">Upload Image</button>-->\n\n      <button class=\"btn btn-danger btn-block\"\n         (click)=\"deleteWidget()\">Delete</button>\n    </form>\n\n  </div>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n\n"
 
 /***/ }),
 
@@ -1846,6 +1995,129 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n\n    <label for=\"Text\">Text</label>\n    <input [(ngModel)]=\"widget.text\"\n           type=\"text\"\n           id=\"Text\"\n           name=\"text\"\n           class=\"form-control\"/>\n\n    <label for=\"Rows\">Rows</label>\n    <input [(ngModel)]=\"widget.rows\"\n           id=\"Rows\"\n           name=\"rows\"\n           class=\"form-control\"\n           type=\"number\"/>\n\n    <label for=\"Name\">Name</label>\n    <input [(ngModel)]=\"widget.name\"\n             type=\"text\"\n             class=\"form-control\"\n             id=\"Name\"\n             name=\"name\"\n             placeholder=\"Name\">\n\n    <label for=\"Placeholder\">Placeholder</label>\n    <input [(ngModel)]=\"widget.placeholder\"\n           id=\"Placeholder\"\n           type=\"text\"\n           name=\"placeholder\"\n           class=\"form-control\"\n           required/>\n\n    <p></p>\n\n    <div class=\"input-group\">\n      <label for=\"Formatted\">Formatted</label>\n      <input type=\"text\"\n             readonly\n             id=\"Formatted\"\n             value=\"Formatted\"\n             class=\"form-control\"/>\n      <span class=\"input-group-addon\">\n        <label for=\"Formatted1\"></label>\n        <input [(ngModel)]=\"widget.formatted\" id=\"Formatted1\" type=\"checkbox\"/>\n      </span>\n    </div>\n\n    <button class=\"btn btn-danger btn-block\" (click)=\"deleteWidget()\">Delete</button>\n\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WidgetTextComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__ = __webpack_require__("../../../../../src/app/services/widget.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var WidgetTextComponent = (function () {
+    function WidgetTextComponent(_widgetService, activatedRoute, router) {
+        this._widgetService = _widgetService;
+        this.activatedRoute = activatedRoute;
+        this.router = router;
+        this.widgets = [];
+    }
+    WidgetTextComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.activatedRoute.params
+            .subscribe(function (params) {
+            _this.userId = params['uid'];
+            _this.websiteId = params['wid'];
+            _this.pageId = params['pid'];
+            _this.widgetId = params['wgid'];
+        });
+        this._widgetService.findWidgetsByPageId(this.pageId)
+            .subscribe(function (widgets) {
+            _this.widgets = widgets;
+        });
+        this._widgetService.findWidgetById(this.widgetId)
+            .subscribe(function (widget) {
+            _this.widget = widget;
+            _this.text = _this.widget.text;
+            _this.name = _this.widget.name;
+            _this.rows = _this.widget.rows;
+            _this.formatted = _this.widget.formatted;
+            _this.placeholder = _this.widget.placeholder;
+        });
+    };
+    WidgetTextComponent.prototype.profile = function () {
+        this.router.navigate(['user/', this.userId]);
+    };
+    WidgetTextComponent.prototype.widgetChooser = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget', 'new']);
+    };
+    WidgetTextComponent.prototype.widgetList = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget']);
+    };
+    WidgetTextComponent.prototype.pageList = function () {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page']);
+    };
+    WidgetTextComponent.prototype.widgetEdit = function (widget) {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+            widget._id]);
+    };
+    WidgetTextComponent.prototype.deleteWidget = function () {
+        var _this = this;
+        this._widgetService.deleteWidget(this.widgetId).subscribe(function () {
+            _this.widgetList();
+        });
+    };
+    WidgetTextComponent.prototype.editWidget = function () {
+        var _this = this;
+        this._widgetService.updateWidget(this.widgetId, { '_id': this.widget.id, 'widgetType': this.widget.widgetType,
+            'pageId': this.widget.pageId, 'text': this.widget.text, 'rows': this.widget.rows, 'name': this.widget.name,
+            'formatted': this.widget.formatted, 'placeholder': this.widget.placeholder })
+            .subscribe(function (widget) {
+            _this.widget = widget;
+            _this.widgetList();
+        });
+    };
+    return WidgetTextComponent;
+}());
+WidgetTextComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-widget-text',
+        template: __webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/widget/widget-edit/widget-text/widget-text.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__["a" /* WidgetService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_widget_service_client__["a" /* WidgetService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object])
+], WidgetTextComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=widget-text.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1867,7 +2139,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n    <form>\n\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-url\">URL</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-url\" name=\"url\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-width\">Width</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-width\" name=\"width\">\n      </div>\n\n      <button class=\"btn btn-danger btn-block\"\n              (click)=\"deleteWidget()\">Delete</button>\n\n    </form>\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <div class=\"row\">\n\n    <div class=\"col-sm-4 hidden-xs\">\n\n      <!--back button-->\n      <p class=\"navbar-text pull-left\">\n        <a (click)=\"pageList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n      </p>\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widgets</b>\n        </a>\n      </p>\n\n      <!--plus sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-plus\"></span>\n        </a>\n      </p>\n\n\n    </div>\n\n    <div class=\"col-sm-8\">\n\n      <!--heading on the nav bar-->\n      <p class=\"navbar-header pull-left\">\n        <a class=\"navbar-brand thick\">\n          <b>Widget Edit</b>\n        </a>\n      </p>\n\n      <!--ok sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"editWidget()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-ok\"></span>\n        </a>\n      </p>\n\n      <!--remove sign-->\n      <p class=\"navbar-text pull-right\">\n        <a (click)=\"widgetList()\" class=\"navbar-link\">\n          <span class=\"glyphicon glyphicon-remove\"></span>\n        </a>\n      </p>\n\n    </div>\n\n  </div>\n\n</nav>\n\n<div class=\"row\">\n\n  <div class=\"col-sm-4 hidden-xs\">\n    <div *ngFor=\"let widget of widgets\">\n      <div [ngSwitch]=\"widget.widgetType\">\n\n        <div *ngSwitchCase=\"'HEADING'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n            <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n            <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n            <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n            <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n            <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'IMAGE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'YOUTUBE'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div class=\"yt-container\">\n              <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n            </div>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'TEXT'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <div *ngIf=\"widget.formatted\">\n              <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n            </div>\n            <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                   placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n            <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                      rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                      class=\"form-control\">{{widget.text}}</textarea>\n          </div>\n        </div>\n\n        <div *ngSwitchCase=\"'HTML'\">\n          <div class=\"widget-element\">\n            <div class=\"widget-configuration\">\n              <a (click)=\"widgetEdit(widget)\">\n                <span class=\"glyphicon glyphicon-cog\"></span>\n              </a>\n              <span class=\"glyphicon glyphicon-align-justify\"></span>\n            </div>\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n  <div class=\"col-sm-8\">\n    <form>\n\n      <div class=\"form-group\">\n        <label for=\"widget-name\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-name\" name=\"name\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-text\">Text</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-text\" name=\"text\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-url\">URL</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-url\" name=\"url\">\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"widget-width\">Width</label>\n        <input type=\"text\" class=\"form-control\" id=\"widget-width\" name=\"width\">\n      </div>\n\n      <button class=\"btn btn-danger btn-block\"\n              (click)=\"deleteWidget()\">Delete</button>\n\n    </form>\n  </div>\n\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n\n"
 
 /***/ }),
 
@@ -1993,7 +2265,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/widget/widget-list/widget-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <!--back button-->\n  <p class=\"navbar-text pull-left\">\n    <a (click)=\"pageList()\" class=\"navbar-link\">\n      <span class=\"glyphicon glyphicon-chevron-left\"></span>\n    </a>\n  </p>\n\n  <!--heading on the nav bar-->\n  <p class=\"navbar-header pull-left\">\n    <a class=\"navbar-brand thick\">\n      <b>Widgets</b>\n    </a>\n  </p>\n\n  <!--plus sign-->\n  <p class=\"navbar-text pull-right\">\n    <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n      <span class=\"glyphicon glyphicon-plus\"></span>\n    </a>\n  </p>\n\n</nav>\n\n<div class=\"container\">\n  <div *ngFor=\"let widget of widgets\">\n\n    <div [ngSwitch]=\"widget.widgetType\">\n\n      <div *ngSwitchCase=\"'HEADING'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditHeader(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n          <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n          <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n          <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n          <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n          <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'IMAGE'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditImage(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'YOUTUBE'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditYouTube(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <div class=\"yt-container\">\n            <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\n\n  <!--back button-->\n  <p class=\"navbar-text pull-left\">\n    <a (click)=\"pageList()\" class=\"navbar-link\">\n      <span class=\"glyphicon glyphicon-chevron-left\"></span>\n    </a>\n  </p>\n\n  <!--heading on the nav bar-->\n  <p class=\"navbar-header pull-left\">\n    <a class=\"navbar-brand thick\">\n      <b>Widgets</b>\n    </a>\n  </p>\n\n  <!--plus sign-->\n  <p class=\"navbar-text pull-right\">\n    <a (click)=\"widgetChooser()\" class=\"navbar-link\">\n      <span class=\"glyphicon glyphicon-plus\"></span>\n    </a>\n  </p>\n\n</nav>\n\n<div class=\"container\">\n  <div *ngFor=\"let widget of widgets\">\n\n    <div [ngSwitch]=\"widget.widgetType\">\n\n      <div *ngSwitchCase=\"'HEADING'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditHeader(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <h1 *ngIf=\"widget.size==1\">{{widget.text}}</h1>\n          <h2 *ngIf=\"widget.size==2\">{{widget.text}}</h2>\n          <h3 *ngIf=\"widget.size==3\">{{widget.text}}</h3>\n          <h4 *ngIf=\"widget.size==4\">{{widget.text}}</h4>\n          <h5 *ngIf=\"widget.size==5\">{{widget.text}}</h5>\n          <h6 *ngIf=\"widget.size==6\">{{widget.text}}</h6>\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'IMAGE'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditImage(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <img [style.width]=\"widget.width\" [src]=\"widget.url | safe\">\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'YOUTUBE'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditYouTube(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <div class=\"yt-container\">\n            <iframe [src]=\"widget.url | safe\" frameborder=\"0\" allowfullscreen></iframe>\n          </div>\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'TEXT'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditText(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <div *ngIf=\"widget.formatted\">\n            <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n          </div>\n          <input *ngIf=\"!widget.formatted && (!widget.rows || widget.rows===1)\"\n                 placeholder=\"{{widget.placeholder}}\" class=\"form-control\"/>\n          <textarea *ngIf=\"!widget.formatted && (widget.rows > 1)\"\n                    rows=\"{{widget.rows}}\" placeholder=\"{{widget.placeholder}}\"\n                    class=\"form-control\">{{widget.text}}</textarea>\n        </div>\n      </div>\n\n      <div *ngSwitchCase=\"'HTML'\">\n        <div class=\"widget-element\">\n          <div class=\"widget-configuration\">\n            <a (click)=\"widgetEditHtml(widget)\">\n              <span class=\"glyphicon glyphicon-cog\"></span>\n            </a>\n            <span class=\"glyphicon glyphicon-align-justify\"></span>\n          </div>\n          <quill-editor [(ngModel)]=\"widget.text\"></quill-editor>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<nav class=\"navbar navbar-default navbar-fixed-bottom\">\n  <div class=\"container-fluid\">\n    <p class=\"navbar-text pull-right\">\n      <a (click)=\"profile()\" class=\"navbar-link\">\n        <span class=\"glyphicon glyphicon-user\"></span>\n      </a>\n    </p>\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -2057,6 +2329,14 @@ var WidgetListComponent = (function () {
     WidgetListComponent.prototype.widgetEditImage = function (widget) {
         this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
             widget._id, 'image']);
+    };
+    WidgetListComponent.prototype.widgetEditHtml = function (widget) {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+            widget._id, 'html']);
+    };
+    WidgetListComponent.prototype.widgetEditText = function (widget) {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+            widget._id, 'text']);
     };
     return WidgetListComponent;
 }());

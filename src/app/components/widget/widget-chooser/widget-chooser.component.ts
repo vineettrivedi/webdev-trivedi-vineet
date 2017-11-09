@@ -78,4 +78,20 @@ export class WidgetChooserComponent implements OnInit {
       });
   }
 
+  widgetNewHtml() {
+    this._widgetService.createWidget(this.pageId, {})
+      .subscribe((widget: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+          widget._id, 'html']);
+      });
+  }
+
+  widgetNewText() {
+    this._widgetService.createWidget(this.pageId, {})
+      .subscribe((widget: any) => {
+        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId, 'widget',
+          widget._id, 'text']);
+      });
+  }
+
 }

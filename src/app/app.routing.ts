@@ -21,6 +21,8 @@ import {WidgetChooserComponent} from './components/widget/widget-chooser/widget-
 import {WidgetHeaderComponent} from './components/widget/widget-edit/widget-header/widget-header.component';
 import {WidgetImageComponent} from './components/widget/widget-edit/widget-image/widget-image.component';
 import {WidgetYoutubeComponent} from './components/widget/widget-edit/widget-youtube/widget-youtube.component';
+import {WidgetHtmlComponent} from './components/widget/widget-edit/widget-html/widget-html.component';
+import {WidgetTextComponent} from './components/widget/widget-edit/widget-text/widget-text.component';
 import {SearchTestComponent} from './search-test/search-test.component';
 
 const APP_ROUTES: Routes = [
@@ -41,6 +43,8 @@ const APP_ROUTES: Routes = [
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/header' , component: WidgetHeaderComponent},
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/image' , component: WidgetImageComponent},
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/youtube' , component: WidgetYoutubeComponent},
+  {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/html' , component: WidgetHtmlComponent},
+  {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/text' , component: WidgetTextComponent},
   {path : 'search' , component: SearchTestComponent}
 ];
 

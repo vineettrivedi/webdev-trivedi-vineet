@@ -22,11 +22,14 @@ import { WidgetEditComponent } from './components/widget/widget-edit/widget-edit
 import { WidgetHeaderComponent } from './components/widget/widget-edit/widget-header/widget-header.component';
 import { WidgetImageComponent } from './components/widget/widget-edit/widget-image/widget-image.component';
 import { WidgetYoutubeComponent } from './components/widget/widget-edit/widget-youtube/widget-youtube.component';
+import { WidgetHtmlComponent } from './components/widget/widget-edit/widget-html/widget-html.component';
+import { WidgetTextComponent } from './components/widget/widget-edit/widget-text/widget-text.component';
 import { UserService } from './services/user.service.client';
 import { WebsiteService } from './services/website.service.client';
 import { PageService } from './services/page.service.client';
 import { WidgetService } from './services/widget.service.client';
 import { SafePipe } from './components/widget/widget-edit/safe-pipe';
+import { QuillEditorModule } from 'ngx-quill-editor';
 
 import {Routing} from './app.routing';
 import { SearchTestComponent } from './search-test/search-test.component';
@@ -53,6 +56,8 @@ import {SearchService} from './services/search.service.client';
     WidgetHeaderComponent,
     WidgetImageComponent,
     WidgetYoutubeComponent,
+    WidgetHtmlComponent,
+    WidgetTextComponent,
     SafePipe,
     SearchTestComponent
   ],
@@ -61,6 +66,7 @@ import {SearchService} from './services/search.service.client';
     HttpModule,
     FormsModule,
     Routing,
+    QuillEditorModule
   ],
   // Client Side services here
   providers: [ TestService, UserService, WebsiteService, PageService, WidgetService, SearchService],
