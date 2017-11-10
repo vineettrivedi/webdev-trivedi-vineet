@@ -42,10 +42,11 @@ export class WebsiteNewComponent implements OnInit {
   createNewWebsite() {
     this.name = this.newWebsiteForm.value.name;
     this.description = this.newWebsiteForm.value.description;
-    this._websiteService.createWebsite( this.userId, {'name': this.name, 'description': this.description} )
+    this._websiteService.createWebsite(this.userId, {name: this.name, description: this.description})
       .subscribe((website: any) => {
-      this.errorFlag = false;
-      this.router.navigate(['user/', this.userId, 'website', website._id]);
+        this.errorFlag = false;
+      // this.router.navigate(['user/', this.userId, 'website', website._id]);
+        this.websiteList();
       },
       (error: any) => {
       this.errorFlag = true;

@@ -24,9 +24,9 @@ module.exports = function (app) {
     website._user = userId;
     delete website._id;
     websiteModel
-      .createWebsite(userId, website)
+      .createWebsiteForUser(userId, website)
       .then(function (website) {
-        res.json(website);
+        res.json({});
       });
     // website._id = Math.random();
     // website.developerId = userId;
@@ -38,7 +38,7 @@ module.exports = function (app) {
     const websiteId = req.params['wid'];
     const website = req.body;
     websiteModel
-      .updateWebsite(websiteId)
+      .updateWebsite(websiteId,website)
       .then(function (website) {
         res.json(website);
       });

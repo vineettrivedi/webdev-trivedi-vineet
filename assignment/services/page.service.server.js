@@ -22,7 +22,7 @@ module.exports = function (app) {
     pageModel
       .createPage(websiteId, page)
       .then(function (page) {
-        res.json(page);
+        res.json({});
       });
     // page._id = Math.random();
     // page.websiteId = websiteId;
@@ -34,7 +34,7 @@ module.exports = function (app) {
     const pageId = req.params['pid'];
     const page = req.body;
     pageModel
-      .updatePage(page)
+      .updatePage(pageId,page)
       .then(function (page) {
         res.json(page);
       });

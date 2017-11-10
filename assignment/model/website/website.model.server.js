@@ -40,5 +40,5 @@ function updateWebsite(websiteId, website) {
 }
 
 function deleteWebsite(websiteId) {
-  return WebsiteModel.delete({_id: websiteId});
+  return WebsiteModel.remove({_id: websiteId});
 }

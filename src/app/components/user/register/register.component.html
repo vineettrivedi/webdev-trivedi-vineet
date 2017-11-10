@@ -48,7 +48,7 @@
       Please enter verify password!
       </span>
       <span class="help-block"
-            *ngIf="!verifypassword!=password && verifypassword.touched" >
+            *ngIf="!(verifypassword.equals(password)) && verifypassword.touched" >
       Password does not match verify password!
       </span>
     </div>

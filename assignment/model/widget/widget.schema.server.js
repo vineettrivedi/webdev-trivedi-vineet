@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const WidgetSchema = mongoose.Schema({
   _page: {type: mongoose.Schema.Types.ObjectId, ref: 'PageModel'},
-  type: String,
+  widgetType: String,
   name: String,
   text: String,
   placeholder: String,

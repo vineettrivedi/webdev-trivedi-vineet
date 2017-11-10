@@ -36,7 +36,7 @@ module.exports = function (app) {
     widget._page = pageId;
     delete widget._id;
     widgetModel
-      .create(widget)
+      .createWidget(pageId,widget)
       .then(function (widget) {
         res.json(widget);
       });

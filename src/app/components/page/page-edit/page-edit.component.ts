@@ -39,7 +39,7 @@ export class PageEditComponent implements OnInit {
       .subscribe((page: any) => {
       this.page = page;
       this.name = this.page['name'];
-      this.title = this.page['description'];
+      this.title = this.page['title'];
       });
 
   }
@@ -70,7 +70,7 @@ export class PageEditComponent implements OnInit {
 
   edit() {
     this._pageService.updatePage(this.pageId, {'_id': this.pageId, 'name': this.name,
-      'websiteId': this.websiteId, 'description': this.title})
+      'websiteId': this.websiteId, 'title': this.title})
       .subscribe((page: any) => {
       this.page = page;
       this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', this.pageId]);

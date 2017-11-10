@@ -75,11 +75,11 @@ export class WidgetImageComponent implements OnInit {
   }
 
   editWidget() {
-    this._widgetService.updateWidget(this.widgetId, {'_id': this.widget._id,
-      'widgetType': this.widget.widgetType,
-      'pageId': this.widget.pageId,
-      'width': this.widget.width,
-      'url': this.widget.url})
+    this._widgetService.updateWidget(this.widgetId, {'_id': this.widgetId,
+      'widgetType': 'IMAGE',
+      'pageId': this.pageId,
+      'width': this.width,
+      'url': this.url})
       .subscribe((widget: any) => {
         this.widget = widget;
         this.widgetList();

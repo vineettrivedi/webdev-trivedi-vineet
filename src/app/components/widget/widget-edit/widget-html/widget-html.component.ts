@@ -70,8 +70,8 @@ export class WidgetHtmlComponent implements OnInit {
   }
 
   editWidget() {
-    this._widgetService.updateWidget(this.widgetId, {'_id': this.widget.id, 'widgetType': this.widget.widgetType,
-      'pageId': this.widget.pageId, 'text': this.widget.text})
+    this._widgetService.updateWidget(this.widgetId, {'_id': this.widgetId, 'widgetType': 'HTML',
+      'pageId': this.pageId, 'text': this.text})
       .subscribe((widget: any) => {
         this.widget = widget;
         this.widgetList();

@@ -78,9 +78,9 @@ export class WidgetTextComponent implements OnInit {
   }
 
   editWidget() {
-    this._widgetService.updateWidget(this.widgetId, {'_id': this.widget.id, 'widgetType': this.widget.widgetType,
-      'pageId': this.widget.pageId, 'text': this.widget.text, 'rows': this.widget.rows, 'name': this.widget.name,
-      'formatted': this.widget.formatted, 'placeholder': this.widget.placeholder})
+    this._widgetService.updateWidget(this.widgetId, {'_id': this.widgetId, 'widgetType': 'TEXT',
+      'pageId': this.pageId, 'text': this.text, 'rows': this.rows, 'name': this.name,
+      'formatted': this.formatted, 'placeholder': this.placeholder})
       .subscribe((widget: any) => {
         this.widget = widget;
         this.widgetList();

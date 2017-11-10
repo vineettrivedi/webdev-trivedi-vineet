@@ -67,8 +67,8 @@ export class WebsiteEditComponent implements OnInit {
   }
 
   edit() {
-    this._websiteService.updateWebsite(this.websiteId, {'_id': this.websiteId, 'name': this.name,
-      'developerId': this.developerId, 'description': this.description})
+    this._websiteService.updateWebsite(this.websiteId, {_id: this.websiteId, name: this.name,
+      developerId: this.developerId, description: this.description})
       .subscribe((website: any) => {
       this.website = website;
       this.router.navigate(['user/', this.userId, 'website', this.websiteId]);

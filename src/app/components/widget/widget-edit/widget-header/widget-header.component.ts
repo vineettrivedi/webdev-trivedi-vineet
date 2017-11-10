@@ -73,8 +73,8 @@ export class WidgetHeaderComponent implements OnInit {
   }
 
   editWidget() {
-    this._widgetService.updateWidget(this.widgetId, {'_id': this.widget.id, 'widgetType': this.widget.widgetType,
-      'pageId': this.widget.pageId, 'size': this.widget.size, 'text': this.widget.text})
+    this._widgetService.updateWidget(this.widgetId, {'_id': this.widgetId, 'widgetType': 'HEADING',
+      'pageId': this.pageId, 'size': this.size, 'text': this.text})
       .subscribe((widget: any) => {
       this.widget = widget;
       this.widgetList();

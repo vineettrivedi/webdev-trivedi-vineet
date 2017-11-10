@@ -42,10 +42,10 @@ export class PageNewComponent implements OnInit {
 
   createNewPage() {
     this.name = this.newPageForm.value.name;
-    this.title = this.newPageForm.value.name;
+    this.title = this.newPageForm.value.title;
     this._pageService.createPage( this.userId, {'name': this.name, 'title': this.title} )
       .subscribe((page: any) => {
-        this.router.navigate(['user/', this.userId, 'website', this.websiteId, 'page', page._id]);
+        this.pageList();
     });
   }
 

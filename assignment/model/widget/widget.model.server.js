@@ -10,18 +10,16 @@ WidgetModel.deleteWidget = deleteWidget;
 module.exports = WidgetModel;
 
 function createWidget(pageId, widget) {
-  let newWidget = null;
-  return WidgetModel
-    .create(widget)
-    .then(function (widget) {
-      newWidget = widget;
-      pageModel
-        .findPageById(pageId)
-        .then(function (page) {
-          page.widgets.push(newWidget);
-          return page.save();
-        });
-    });
+  return WidgetModel.create(widget);
+    // .then(function (widget) {
+    //   newWidget = widget; console.log('1'+widget);
+    //   pageModel
+    //     .findPageById(pageId)
+    //     .then(function (page) {
+    //       page.widgets.push(newWidget);
+    //       return page.save();
+    //     });
+    // });
 }
 
 function findAllWidgetsForPage(pageId) {
@@ -40,5 +38,5 @@ function updateWidget(widgetId, widget) {
 }
 
 function deleteWidget(widgetId) {
-  return WidgetModel.delete({_id: widgetId});
+  return WidgetModel.remove({_id: widgetId});
 }
