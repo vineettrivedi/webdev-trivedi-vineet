@@ -34,6 +34,20 @@ import { QuillEditorModule } from 'ngx-quill-editor';
 import {Routing} from './app.routing';
 import { SearchTestComponent } from './search-test/search-test.component';
 import {SearchService} from './services/search.service.client';
+import { ComedianLoginComponent } from '../../project/client/src/app/components/comedian/comedian-login/comedian-login.component';
+import { ComedianProfileComponent } from '../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component';
+import { ComedianAccountComponent } from '../../project/client/src/app/components/comedian/comedian-account/comedian-account.component';
+import { PortfolioComponent } from '../../project/client/src/app/components/comedian/portfolio/portfolio.component';
+import { BitListComponent } from '../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component';
+import { BitCreateComponent } from '../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component';
+import { BitViewComponent } from '../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component';
+import { SearchComponent } from '../../project/client/src/app/components/search/search.component';
+import { CriticLoginComponent } from '../../project/client/src/app/components/critic/critic-login/critic-login.component';
+import { CriticProfileComponent } from '../../project/client/src/app/components/critic/critic-profile/critic-profile.component';
+import { CriticAccountComponent } from '../../project/client/src/app/components/critic/critic-account/critic-account.component';
+import { ReviewListComponent } from '../../project/client/src/app/components/critic/review/review-list/review-list.component';
+import { ReviewCreateComponent } from '../../project/client/src/app/components/critic/review/review-create/review-create.component';
+import { ReviewViewComponent } from '../../project/client/src/app/components/critic/review/review-view/review-view.component';
 
 @NgModule({
   // Declare components here
@@ -59,7 +73,21 @@ import {SearchService} from './services/search.service.client';
     WidgetHtmlComponent,
     WidgetTextComponent,
     SafePipe,
-    SearchTestComponent
+    SearchTestComponent,
+    ComedianLoginComponent,
+    ComedianProfileComponent,
+    ComedianAccountComponent,
+    PortfolioComponent,
+    BitListComponent,
+    BitCreateComponent,
+    BitViewComponent,
+    SearchComponent,
+    CriticLoginComponent,
+    CriticProfileComponent,
+    CriticAccountComponent,
+    ReviewListComponent,
+    ReviewCreateComponent,
+    ReviewViewComponent
   ],
   imports: [
     BrowserModule,

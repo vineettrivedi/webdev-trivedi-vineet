@@ -1,5 +1,859 @@
 webpackJsonp(["main"],{
 
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  bit-create works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BitCreateComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BitCreateComponent = (function () {
+    function BitCreateComponent() {
+    }
+    BitCreateComponent.prototype.ngOnInit = function () {
+    };
+    return BitCreateComponent;
+}());
+BitCreateComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-bit-create',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], BitCreateComponent);
+
+//# sourceMappingURL=bit-create.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  bit-list works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BitListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BitListComponent = (function () {
+    function BitListComponent() {
+    }
+    BitListComponent.prototype.ngOnInit = function () {
+    };
+    return BitListComponent;
+}());
+BitListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-bit-list',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], BitListComponent);
+
+//# sourceMappingURL=bit-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  bit-view works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BitViewComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BitViewComponent = (function () {
+    function BitViewComponent() {
+    }
+    BitViewComponent.prototype.ngOnInit = function () {
+    };
+    return BitViewComponent;
+}());
+BitViewComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-bit-view',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], BitViewComponent);
+
+//# sourceMappingURL=bit-view.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  comedian-account works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianAccountComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ComedianAccountComponent = (function () {
+    function ComedianAccountComponent() {
+    }
+    ComedianAccountComponent.prototype.ngOnInit = function () {
+    };
+    return ComedianAccountComponent;
+}());
+ComedianAccountComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-comedian-account',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ComedianAccountComponent);
+
+//# sourceMappingURL=comedian-account.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  comedian-login works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianLoginComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ComedianLoginComponent = (function () {
+    function ComedianLoginComponent() {
+    }
+    ComedianLoginComponent.prototype.ngOnInit = function () {
+    };
+    return ComedianLoginComponent;
+}());
+ComedianLoginComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-comedian-login',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ComedianLoginComponent);
+
+//# sourceMappingURL=comedian-login.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  comedian-profile works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComedianProfileComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ComedianProfileComponent = (function () {
+    function ComedianProfileComponent() {
+    }
+    ComedianProfileComponent.prototype.ngOnInit = function () {
+    };
+    return ComedianProfileComponent;
+}());
+ComedianProfileComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-comedian-profile',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ComedianProfileComponent);
+
+//# sourceMappingURL=comedian-profile.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  portfolio works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PortfolioComponent = (function () {
+    function PortfolioComponent() {
+    }
+    PortfolioComponent.prototype.ngOnInit = function () {
+    };
+    return PortfolioComponent;
+}());
+PortfolioComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-portfolio',
+        template: __webpack_require__("../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], PortfolioComponent);
+
+//# sourceMappingURL=portfolio.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  critic-account works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticAccountComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CriticAccountComponent = (function () {
+    function CriticAccountComponent() {
+    }
+    CriticAccountComponent.prototype.ngOnInit = function () {
+    };
+    return CriticAccountComponent;
+}());
+CriticAccountComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-critic-account',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], CriticAccountComponent);
+
+//# sourceMappingURL=critic-account.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  critic-login works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticLoginComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CriticLoginComponent = (function () {
+    function CriticLoginComponent() {
+    }
+    CriticLoginComponent.prototype.ngOnInit = function () {
+    };
+    return CriticLoginComponent;
+}());
+CriticLoginComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-critic-login',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], CriticLoginComponent);
+
+//# sourceMappingURL=critic-login.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  critic-profile works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriticProfileComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CriticProfileComponent = (function () {
+    function CriticProfileComponent() {
+    }
+    CriticProfileComponent.prototype.ngOnInit = function () {
+    };
+    return CriticProfileComponent;
+}());
+CriticProfileComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-critic-profile',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], CriticProfileComponent);
+
+//# sourceMappingURL=critic-profile.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  review-create works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewCreateComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReviewCreateComponent = (function () {
+    function ReviewCreateComponent() {
+    }
+    ReviewCreateComponent.prototype.ngOnInit = function () {
+    };
+    return ReviewCreateComponent;
+}());
+ReviewCreateComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-review-create',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ReviewCreateComponent);
+
+//# sourceMappingURL=review-create.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  review-list works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReviewListComponent = (function () {
+    function ReviewListComponent() {
+    }
+    ReviewListComponent.prototype.ngOnInit = function () {
+    };
+    return ReviewListComponent;
+}());
+ReviewListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-review-list',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ReviewListComponent);
+
+//# sourceMappingURL=review-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  review-view works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewViewComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReviewViewComponent = (function () {
+    function ReviewViewComponent() {
+    }
+    ReviewViewComponent.prototype.ngOnInit = function () {
+    };
+    return ReviewViewComponent;
+}());
+ReviewViewComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-review-view',
+        template: __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ReviewViewComponent);
+
+//# sourceMappingURL=review-view.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/search/search.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/search/search.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  search works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../project/client/src/app/components/search/search.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SearchComponent = (function () {
+    function SearchComponent() {
+    }
+    SearchComponent.prototype.ngOnInit = function () {
+    };
+    return SearchComponent;
+}());
+SearchComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-search',
+        template: __webpack_require__("../../../../../project/client/src/app/components/search/search.component.html"),
+        styles: [__webpack_require__("../../../../../project/client/src/app/components/search/search.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], SearchComponent);
+
+//# sourceMappingURL=search.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/$$_gendir lazy recursive":
 /***/ (function(module, exports) {
 
@@ -105,12 +959,40 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__search_test_search_test_component__ = __webpack_require__("../../../../../src/app/search-test/search-test.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_search_service_client__ = __webpack_require__("../../../../../src/app/services/search.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__project_client_src_app_components_comedian_comedian_login_comedian_login_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-login/comedian-login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__project_client_src_app_components_comedian_comedian_profile_comedian_profile_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-profile/comedian-profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__project_client_src_app_components_comedian_comedian_account_comedian_account_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/comedian-account/comedian-account.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__project_client_src_app_components_comedian_portfolio_portfolio_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/portfolio/portfolio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__project_client_src_app_components_comedian_bit_bit_list_bit_list_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-list/bit-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__project_client_src_app_components_comedian_bit_bit_create_bit_create_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-create/bit-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__project_client_src_app_components_comedian_bit_bit_view_bit_view_component__ = __webpack_require__("../../../../../project/client/src/app/components/comedian/bit/bit-view/bit-view.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__project_client_src_app_components_search_search_component__ = __webpack_require__("../../../../../project/client/src/app/components/search/search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__project_client_src_app_components_critic_critic_login_critic_login_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/critic-login/critic-login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__project_client_src_app_components_critic_critic_profile_critic_profile_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/critic-profile/critic-profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__project_client_src_app_components_critic_critic_account_critic_account_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/critic-account/critic-account.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__project_client_src_app_components_critic_review_review_list_review_list_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-list/review-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__project_client_src_app_components_critic_review_review_create_review_create_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-create/review-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__project_client_src_app_components_critic_review_review_view_review_view_component__ = __webpack_require__("../../../../../project/client/src/app/components/critic/review/review-view/review-view.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,7 +1057,21 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_23__components_widget_widget_edit_widget_html_widget_html_component__["a" /* WidgetHtmlComponent */],
             __WEBPACK_IMPORTED_MODULE_24__components_widget_widget_edit_widget_text_widget_text_component__["a" /* WidgetTextComponent */],
             __WEBPACK_IMPORTED_MODULE_29__components_widget_widget_edit_safe_pipe__["a" /* SafePipe */],
-            __WEBPACK_IMPORTED_MODULE_32__search_test_search_test_component__["a" /* SearchTestComponent */]
+            __WEBPACK_IMPORTED_MODULE_32__search_test_search_test_component__["a" /* SearchTestComponent */],
+            __WEBPACK_IMPORTED_MODULE_34__project_client_src_app_components_comedian_comedian_login_comedian_login_component__["a" /* ComedianLoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_35__project_client_src_app_components_comedian_comedian_profile_comedian_profile_component__["a" /* ComedianProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__project_client_src_app_components_comedian_comedian_account_comedian_account_component__["a" /* ComedianAccountComponent */],
+            __WEBPACK_IMPORTED_MODULE_37__project_client_src_app_components_comedian_portfolio_portfolio_component__["a" /* PortfolioComponent */],
+            __WEBPACK_IMPORTED_MODULE_38__project_client_src_app_components_comedian_bit_bit_list_bit_list_component__["a" /* BitListComponent */],
+            __WEBPACK_IMPORTED_MODULE_39__project_client_src_app_components_comedian_bit_bit_create_bit_create_component__["a" /* BitCreateComponent */],
+            __WEBPACK_IMPORTED_MODULE_40__project_client_src_app_components_comedian_bit_bit_view_bit_view_component__["a" /* BitViewComponent */],
+            __WEBPACK_IMPORTED_MODULE_41__project_client_src_app_components_search_search_component__["a" /* SearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_42__project_client_src_app_components_critic_critic_login_critic_login_component__["a" /* CriticLoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_43__project_client_src_app_components_critic_critic_profile_critic_profile_component__["a" /* CriticProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_44__project_client_src_app_components_critic_critic_account_critic_account_component__["a" /* CriticAccountComponent */],
+            __WEBPACK_IMPORTED_MODULE_45__project_client_src_app_components_critic_review_review_list_review_list_component__["a" /* ReviewListComponent */],
+            __WEBPACK_IMPORTED_MODULE_46__project_client_src_app_components_critic_review_review_create_review_create_component__["a" /* ReviewCreateComponent */],
+            __WEBPACK_IMPORTED_MODULE_47__project_client_src_app_components_critic_review_review_view_review_view_component__["a" /* ReviewViewComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
