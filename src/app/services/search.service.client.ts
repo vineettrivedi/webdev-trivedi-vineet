@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 export class SearchService {
   searchImage(image: String) {
     const url = 'https://api.flickr.com/' +
-      'services/rest/?method=flickr.photos.search&api_key=612c750c9751a0899e7f4d8b53342ea3&text='
+      'services/rest/?method=flickr.photos.search&api_key=e223db0dfbe2560648b4d6a33a6b91f9&text='
       + image + '&format=json&nojsoncallback=1';
     return this.http.get(url)
       .map( (response: Response) => {
@@ -17,5 +17,6 @@ export class SearchService {
 
   constructor(private http: Http) {}
 }
-// 612c750c9751a0899e7f4d8b53342ea3
-// 580fd707dfe6fa84a049479f797769de
+
+// key: e223db0dfbe2560648b4d6a33a6b91f9
+// secret: 58e7be631cb328c1

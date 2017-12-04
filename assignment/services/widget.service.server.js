@@ -124,29 +124,28 @@ module.exports = function (app) {
   }
 
   function findAllWidgetsForPage(req, res) {
-    const pageId = req.params['pid'];
-    pageModel
-      .findPageById(pageId)
-      .then(function(page) {
-        let semi = page.widgets;
-        let widgets = [];
-        for (let x = 0; x < semi.length; x++) {
-          widgetModel
-            .findWidgetById(semi[x]._id)
-            .then(function (widget) {
-              widgets.push(widget);
-              if(x === semi.length-1) {
-                res.json(widgets);
-              }
-            });
-        }
-      });
-    // widgetModel
-    //   .findAllWidgetsForPage(pageId)
-    //   .then(function (widgets) {
-    //     console.log(widgets);
-    //     res.json(widgets);
+     const pageId = req.params['pid'];
+    // pageModel
+    //   .findPageById(pageId)
+    //   .then(function(page) {
+    //     let semi = page.widgets;
+    //     let widgets = [];
+    //     for (let x = 0; x < semi.length; x++) {
+    //       widgetModel
+    //         .findWidgetById(semi[x]._id)
+    //         .then(function (widget) {
+    //           widgets.push(widget);
+    //           if(x === semi.length-1) {
+    //             res.json(widgets);
+    //           }
+    //         });
+    //     }
     //   });
+    widgetModel
+      .findAllWidgetsForPage(pageId)
+      .then(function (widgets) {
+        res.json(widgets);
+      });
     // const result = [];
     // let count  = 0;
     // for (let x = 0; x < this.widgets.length; x++) {
