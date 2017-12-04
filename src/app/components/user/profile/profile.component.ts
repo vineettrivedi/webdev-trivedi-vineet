@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from '../../../services/user.service.client';
 import {ActivatedRoute, Router} from '@angular/router';
+import {SharedService} from '../../../services/shared.service.client';
 
 @Component({
   selector: 'app-profile',
@@ -19,27 +20,35 @@ export class ProfileComponent implements OnInit {
   password: string;
 
 
-  constructor(private userService: UserService, private activatedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private sharedService: SharedService, private userService: UserService,
+              private activatedRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
 
-    this.activatedRoute.params
-      .subscribe(
-        (params: any) => {
-          this.userId = params['uid'];
-        }
-      );
-
-    this.userService.findUserById(this.userId)
-      .subscribe((user: any) => {
-      this.user = user;
-        this.username = this.user['username'];
-        this.password = this.user['password'];
-        this.email = this.user['email'];
-        this.firstName = this.user['firstName'];
-        this.lastName = this.user['lastName'];
-      });
+    // this.activatedRoute.params
+    //   .subscribe(
+    //     (params: any) => {
+    //       this.userId = params['uid'];
+    //     }
+    //   );
+    //
+    // this.userService.findUserById(this.userId)
+    //   .subscribe((user: any) => {
+    //   this.user = user;
+    //     this.username = this.user['username'];
+    //     this.password = this.user['password'];
+    //     this.email = this.user['email'];
+    //     this.firstName = this.user['firstName'];
+    //     this.lastName = this.user['lastName'];
+    //   });
     // this.user = this.userService.findUserById(this.userId);
+    this.user = this.sharedService.user;
+    this.userId = this.user['_id'];
+    this.username = this.user['username'];
+    this.password = this.user['password'];
+    this.email = this.user['email'];
+    this.firstName = this.user['firstName'];
+    this.lastName = this.user['lastName'];
 
   }
 
@@ -48,7 +57,11 @@ export class ProfileComponent implements OnInit {
   }
 
   logout() {
-    this.router.navigate(['/login']);
+    this.userService.logout()
+      .subscribe(
+        (data: any) => this.router.navigate(['/login'])
+      );
+    // this.router.navigate(['/login']);
   }
 
   editProfile() {

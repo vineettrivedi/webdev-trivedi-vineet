@@ -1,4 +1,4 @@
-<h1>Search API Test</h1>
+<h1>Search Flickr</h1>
 
 <label>Search Image</label>
 <input [(ngModel)]="image"
@@ -11,6 +11,8 @@
 
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let photo of result.photos.photo">
-    {{photo.id}}
+    <a (click)="selectImage(photo)">
+      <img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg">
+    </a>
   </li>
 </ul>

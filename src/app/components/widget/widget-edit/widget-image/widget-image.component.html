@@ -164,6 +164,9 @@
         <input [(ngModel)]="width" type="text" class="form-control" id="widget-width" name="width">
       </div>
 
+      <button class="btn btn-danger btn-block"
+              (click)="flickr()">Flickr Search</button>
+
       <form ngForm action="{{baseUrl}}/api/upload" method="post" enctype="multipart/form-data">
         <input  name="myFile"   type="file" class="form-control"/>
         <input  name="widgetId" value="{{widgetId}}"   style="display: none"/>

@@ -24,13 +24,15 @@ import {WidgetYoutubeComponent} from './components/widget/widget-edit/widget-you
 import {WidgetHtmlComponent} from './components/widget/widget-edit/widget-html/widget-html.component';
 import {WidgetTextComponent} from './components/widget/widget-edit/widget-text/widget-text.component';
 import {SearchTestComponent} from './search-test/search-test.component';
+import {AuthGuard} from './services/auth-guard.service';
 
 const APP_ROUTES: Routes = [
   {path: '', component : HomeComponent},
   {path: 'test', component: TestComponent},
   {path : 'login' , component: LoginComponent},
   {path : 'register' , component: RegisterComponent},
-  {path : 'user/:uid' , component: ProfileComponent},
+  {path : 'user' , component: ProfileComponent, canActivate: [AuthGuard]},
+  {path : 'user/:uid' , component: ProfileComponent, canActivate: [AuthGuard]},
   {path : 'user/:uid/website' , component: WebsiteListComponent},
   {path : 'user/:uid/website/new' , component: WebsiteNewComponent},
   {path : 'user/:uid/website/:wid' , component: WebsiteEditComponent},
@@ -45,7 +47,7 @@ const APP_ROUTES: Routes = [
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/youtube' , component: WidgetYoutubeComponent},
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/html' , component: WidgetHtmlComponent},
   {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/text' , component: WidgetTextComponent},
-  {path : 'search' , component: SearchTestComponent}
+  {path : 'user/:uid/website/:wid/page/:pid/widget/:wgid/search' , component: SearchTestComponent}
 ];
 
 // Export the routes as module providers

@@ -70,4 +70,11 @@ export class WidgetListComponent implements OnInit {
       widget._id, 'text']);
   }
 
+  newIndexes(index) {
+  //  console.log('1: ' + index.startIndex + ', 2: ' + index.endIndex);
+    this._widgetService.sortWidgets(index.startIndex, index.endIndex, this.pageId)
+      .subscribe((page: any) => {
+      });
+  }
+
 }

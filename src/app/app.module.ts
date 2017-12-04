@@ -28,8 +28,11 @@ import { UserService } from './services/user.service.client';
 import { WebsiteService } from './services/website.service.client';
 import { PageService } from './services/page.service.client';
 import { WidgetService } from './services/widget.service.client';
+import { SharedService } from './services/shared.service.client';
 import { SafePipe } from './components/widget/widget-edit/safe-pipe';
 import { QuillEditorModule } from 'ngx-quill-editor';
+import {AuthGuard} from './services/auth-guard.service';
+import {SortableDirective} from '../../assignment/directives/sortable.directive';
 
 import {Routing} from './app.routing';
 import { SearchTestComponent } from './search-test/search-test.component';
@@ -73,6 +76,7 @@ import { ReviewViewComponent } from '../../project/client/src/app/components/cri
     WidgetHtmlComponent,
     WidgetTextComponent,
     SafePipe,
+    SortableDirective,
     SearchTestComponent,
     ComedianLoginComponent,
     ComedianProfileComponent,
@@ -97,7 +101,7 @@ import { ReviewViewComponent } from '../../project/client/src/app/components/cri
     QuillEditorModule
   ],
   // Client Side services here
-  providers: [ TestService, UserService, WebsiteService, PageService, WidgetService, SearchService],
+  providers: [ AuthGuard, TestService, UserService, WebsiteService, PageService, WidgetService, SearchService, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

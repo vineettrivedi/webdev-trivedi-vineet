@@ -66,4 +66,12 @@ export class WidgetService {
       );
   }
 
+  sortWidgets(start: number, end: number, pageId: string) {
+    return this._http.put(this.baseUrl + '/api/page/' + pageId + '/widget/?start=' + start + '&end=' + end, {})
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      );
+  }
 }
