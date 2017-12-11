@@ -74,6 +74,20 @@ a:focus, a:hover {
   z-index: 3;
 }
 
+#mainpage {padding-top:50px;height:500px;background-color: #1abc9c;color: #ffffff;}
+#aboutme {padding-top:50px;height:500px;background-color: #474e5d;color: #ffffff;}
+#links {padding-top:50px;height:500px;background-color: #ffffff;color: #555555;}
+
+.pointer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.vessel {
+  padding-top: 30px;
+}
+
+
 .yt-container {
   position:relative;
   padding-bottom:56.25%;
